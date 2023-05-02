@@ -1,7 +1,7 @@
 // install and import clarifai here
 const clarifai= require('clarifai')
 const app= new Clarifai.App({
-    apiKey: 'ccf1401438994a359874fd91230ca5b6'
+    apiKey: process.env.API_CLARIFAI
   });
 
   const handleApiCall=(req,res)=>{
